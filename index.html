@@ -90,7 +90,7 @@
   .btn { margin-top: 10px; padding: 12px 20px; border: none; border-radius: 12px; background-color: #fff; color: #000; font-weight: bold; cursor: pointer; text-decoration: none; text-align: center; }
   .btn:hover { opacity: 0.8; }
 
-  .audio-controls { margin: 20px 0; display: flex; gap: 10px; }
+  .audio-controls { margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
   .audio-btn { padding: 10px 15px; border-radius: 10px; border: none; font-weight: bold; cursor: pointer; background-color: #8B0000; color: #fff; border: 2px solid #000; }
   .audio-btn:hover { background-color: #a30000; }
 </style>
@@ -113,7 +113,7 @@
 * Support android 5 - 14  
 * Bisa mengambil akun game korban  
 * Bisa melihat sistem hp korban  
-SELENGKAP TENTANG SURXRAT TANYA AJA
+DLL
     </div>
     <div class="product-price">Rp 25.000</div>
     <a class="btn-buy" href="https://t.me/acelXmodz" target="_blank">GAS BUY</a>
@@ -192,8 +192,10 @@ SELENGKAP TENTANG SURXRAT TANYA AJA
     <button class="audio-btn" id="unmuteBtn">Unmute</button>
   </div>
 
+  <!-- Audio File -->
   <audio id="bgAudio" loop>
-    <source src="https://raw.githubusercontent.com/acelgg/ACEL-OFFICIALKU-PRODUK.../main/TikSave.io_7496683541594459399.mp3" type="audio/mpeg">
+    <source src="TikSave.io_7496683541594459399.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
   </audio>
 </div>
 
@@ -204,6 +206,7 @@ SELENGKAP TENTANG SURXRAT TANYA AJA
   document.getElementById('muteBtn').addEventListener('click', () => audio.muted = true);
   document.getElementById('unmuteBtn').addEventListener('click', () => audio.muted = false);
 
+  // Auto play on load (harap klik tombol di HP jika auto-play gagal)
   window.addEventListener('load', () => {
     audio.play().catch(() => console.log("Klik tombol play untuk audio."));
   });
@@ -240,4 +243,4 @@ SELENGKAP TENTANG SURXRAT TANYA AJA
   });
 </script>
 </body>
-  </html>
+</html>
