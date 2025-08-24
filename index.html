@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACEL OFFICIALKU</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #8B0000);
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-bottom: 2px solid #fff;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .product-section, .section {
+    width: 90%;
+    max-width: 700px;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+  }
+
+  .product-title { font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+  .product-desc { font-size: 16px; margin-bottom: 10px; white-space: pre-wrap; }
+  .scrollable-desc { max-height: 250px; overflow-y: auto; padding-right: 10px; }
+  .product-price { font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+
+  .btn-buy {
+    padding: 14px 25px;
+    background-color: #8B0000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #000;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .btn-buy:hover { background-color: #a30000; box-shadow: 0 0 10px #000; }
+
+  .section-title { font-size: 20px; font-weight: bold; margin-bottom: 10px; }
+  .payment-box { width: 100%; padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 15px; cursor: pointer; }
+  .payment-box img { width: 40px; height: 40px; }
+  .payment-text { font-size: 18px; font-weight: bold; }
+  .dana { background-color: #8B0000; color: #fff; }
+  .qris { background-color: #000000; color: #fff; }
+  .testimoni { background-color: #8B0000; color: #fff; }
+
+  .btn { margin-top: 10px; padding: 12px 20px; border: none; border-radius: 12px; background-color: #fff; color: #000; font-weight: bold; cursor: pointer; text-decoration: none; text-align: center; }
+  .btn:hover { opacity: 0.8; }
+
+  .audio-controls { margin: 20px 0; display: flex; gap: 10px; }
+  .audio-btn { padding: 10px 15px; border-radius: 10px; border: none; font-weight: bold; cursor: pointer; background-color: #8B0000; color: #fff; border: 2px solid #000; }
+  .audio-btn:hover { background-color: #a30000; }
+</style>
+</head>
+<body>
+
+<canvas id="lightningCanvas"></canvas>
+
+<div class="container">
+  <div class="marquee"><span>ACEL OFFICIALKU — ACEL OFFICIALKU — ACEL OFFICIALKU — </span></div>
+
+  <!-- Produk 1 -->
+  <div class="product-section">
+    <div class="product-title">☠️𝙎𝙐𝙍𝙓𝙍𝟰𝙏 1.4 𝙎𝟯𝟱 𝙉𝙀𝙒☠️</div>
+    <div class="product-desc scrollable-desc">
+* Free req name key login  
+* Free tutor Ubah icon apk  
+* Free update apk seumur hidup  
+* Apk on 24 jam  
+* Support android 5 - 14  
+* Bisa mengambil akun game korban  
+* Bisa melihat sistem hp korban  
+SELENGKAP TENTANG SURXRAT TANYA AJA
+    </div>
+    <div class="product-price">Rp 25.000</div>
+    <a class="btn-buy" href="https://t.me/acelXmodz" target="_blank">GAS BUY</a>
+  </div>
+
+  <!-- Produk 2 -->
+  <div class="product-section">
+    <div class="product-title">🩸𝗔𝗖𝗘𝗟 𝗢𝗣𝗘𝗡 𝗠𝗨𝗥𝗜𝗗 𝗦𝟰𝗗𝗔𝗣🩸</div>
+    <div class="product-desc">
+• BISA KUNCI LAYAR  
+• BISA H4CK SMS  
+• BISA H4CK GALERY  
+• TUROR PAKAI VIDIO  
+• ADA BOT S4DAP VIP  
+• BISA H4CK KAMERA VERSI GAMBAR  
+• BISA H4CK KAMERA VERSI VIDIO  
+    </div>
+    <div class="product-price">Rp 15.000</div>
+    <a class="btn-buy" href="https://t.me/acelXmodz" target="_blank">GAS BUY</a>
+  </div>
+
+  <!-- Produk 3 -->
+  <div class="product-section">
+    <div class="product-title">𝗠𝗨𝗥𝗜𝗗 𝗕𝗔𝗗𝗔𝗞𝗜𝗡 𝗡𝗢𝗠𝗢𝗥🌟</div>
+    <div class="product-desc">
+• BISA BADAKIN ALL WA  
+• BISA STOCK WA BADAK  
+• AUTO BALIK MODAL  
+• DLL
+    </div>
+    <div class="product-price">Rp 10.000</div>
+    <a class="btn-buy" href="https://t.me/acelXmodz" target="_blank">GAS BUY</a>
+  </div>
+
+  <!-- Produk 4 -->
+  <div class="product-section">
+    <div class="product-title">𝗠𝗨𝗥𝗜𝗗 𝗥𝗘𝗡𝗔𝗠𝗘 𝗔𝗣𝗟𝗜𝗞𝗔𝗦𝗜🌟</div>
+    <div class="product-desc">
+• BISA UBAH APK SESUKA HATI  
+• BISA OPEN JASA RENAME APK  
+• SEMUA APK BISA DI UBAH  
+• DLL
+    </div>
+    <div class="product-price">Rp 8.000</div>
+    <a class="btn-buy" href="https://t.me/acelXmodz" target="_blank">GAS BUY</a>
+  </div>
+
+  <!-- Bagian Payment -->
+  <div class="section">
+    <div class="section-title">ALL PAYMENT ACEL</div>
+    <div class="payment-box dana">
+      <img src="https://img1.pixhost.to/images/8190/634384255_hiro.jpg" alt="DANA Logo">
+      <div class="payment-text">DANA<br>081374517676</div>
+    </div>
+    <div class="payment-box qris">
+      <img src="https://img1.pixhost.to/images/8190/634384362_hiro.jpg" alt="QRIS Logo">
+      <div class="payment-text">QRIS</div>
+    </div>
+    <a class="btn" href="https://t.me/acelXmodz?text=QRIS%20BANG%20GW%20MAU%20BUY" target="_blank">KIRIM PESAN KE TELEGRAM</a>
+  </div>
+
+  <div class="section">
+    <div class="section-title">TESTIMONI YANG BUY</div>
+    <div class="payment-box testimoni">
+      <img src="https://img1.pixhost.to/images/8190/634384450_hiro.jpg" alt="Testimoni Logo">
+      <div class="payment-text">Testimoni</div>
+    </div>
+    <a class="btn" href="https://whatsapp.com/channel/0029VbAN66d4NVikWLMv120F" target="_blank">JOIN CH TESTIMONI</a>
+  </div>
+
+  <!-- Audio Controls -->
+  <div class="audio-controls">
+    <button class="audio-btn" id="playBtn">Play</button>
+    <button class="audio-btn" id="pauseBtn">Pause</button>
+    <button class="audio-btn" id="muteBtn">Mute</button>
+    <button class="audio-btn" id="unmuteBtn">Unmute</button>
+  </div>
+
+  <audio id="bgAudio" loop>
+    <source src="https://raw.githubusercontent.com/USERNAME/REPO/main/TikSave.io_7496683541594459399.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<script>
+  const audio = document.getElementById('bgAudio');
+  document.getElementById('playBtn').addEventListener('click', () => audio.play());
+  document.getElementById('pauseBtn').addEventListener('click', () => audio.pause());
+  document.getElementById('muteBtn').addEventListener('click', () => audio.muted = true);
+  document.getElementById('unmuteBtn').addEventListener('click', () => audio.muted = false);
+
+  window.addEventListener('load', () => {
+    audio.play().catch(() => console.log("Klik tombol play untuk audio."));
+  });
+
+  // Efek Petir
+  const canvas = document.getElementById('lightningCanvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  function drawLightning() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    if(Math.random() < 0.03){
+      ctx.strokeStyle = 'rgba(0,191,255,1)';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      let startX = Math.random() * canvas.width;
+      let startY = 0;
+      ctx.moveTo(startX,startY);
+      for(let i=0;i<10;i++){
+        let x = startX + (Math.random()-0.5)*50;
+        let y = startY + i*50;
+        ctx.lineTo(x,y);
+      }
+      ctx.stroke();
+    }
+    requestAnimationFrame(drawLightning);
+  }
+  drawLightning();
+
+  window.addEventListener('resize', ()=>{
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+</script>
+</body>
+  </html>
